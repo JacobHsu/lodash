@@ -1,5 +1,7 @@
 # lodash
 
+[Lodash 中文文档](https://www.html.cn/doc/lodash/)
+
 ## docsify
 
 [docsify.js](https://docsify.js.org/#/zh-cn/quickstart)
