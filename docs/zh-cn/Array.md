@@ -27,3 +27,16 @@ _.take([1, 2, 3], 5);
 _.take([1, 2, 3], 0);
 // => []
 ```
+
+## fromPairs
+
+> _.fromPairs(pairs)
+
+与[_.toPairs](https://www.html.cn/doc/lodash/#_topairsobject)正好相反；这个方法返回一个由键值对pairs构成的对象。
+
+array -> pairs
+
+```js
+_.fromPairs([['fred', 30], ['barney', 40]]);
+// => { 'fred': 30, 'barney': 40 }
+```
