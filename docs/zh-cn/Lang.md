@@ -30,3 +30,5 @@ _.isString('abc');
 _.isString(1);
 // => false
 ```
+
+[filename](code/lang/cloneDeep.js ':include :type=code :fragment=demo')

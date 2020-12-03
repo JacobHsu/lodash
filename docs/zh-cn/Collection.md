@@ -63,7 +63,10 @@ _.map(['TEST','TYPE'], value => [value, createType(value)])
 // 1: ["TYPE", Object {base: "TYPE", failure: "TYPE_FAILURE", success: "TYPE_SUCCESS"}]
 
 _.fromPairs([
-   ["TEST", Object {base: "TEST", failure: "TEST_FAILURE", success: "TEST_SUCCESS"}], ["TYPE", Object {base: "TYPE", failure: "TYPE_FAILURE", success: "TYPE_SUCCESS"}]
+   ["TEST", {base: "TEST", failure: "TEST_FAILURE", success: "TEST_SUCCESS"}],
+   ["TYPE", {base: "TYPE", failure: "TYPE_FAILURE", success: "TYPE_SUCCESS"}]
 ]);
-// => { 'TEST':{base: "TEST", failure: "TEST_FAILURE", success: "TEST_SUCCESS"}, 'TYPE': {base: "TYPE", failure: "TYPE_FAILURE", success: "TYPE_SUCCESS"} }
+// => Object
+// TEST: Object {base: "TEST", failure: "TEST_FAILURE", success: "TEST_SUCCESS"}
+// TYPE: Object {base: "TYPE", failure: "TYPE_FAILURE", success: "TYPE_SUCCESS"}
 ```
