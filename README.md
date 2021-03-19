@@ -12,3 +12,8 @@
 ## test
 
 [RunKit + npm](https://npm.runkit.com/)
+
+## QA
+
+* sort array of object by value
+ `orderBy`

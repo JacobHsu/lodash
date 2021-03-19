@@ -70,3 +70,28 @@ _.fromPairs([
 // TEST: Object {base: "TEST", failure: "TEST_FAILURE", success: "TEST_SUCCESS"}
 // TYPE: Object {base: "TYPE", failure: "TYPE_FAILURE", success: "TYPE_SUCCESS"}
 ```
+
+## orderBy
+
+> _.orderBy(collection, [iteratees=[_.identity]], [orders])
+
+```js
+var users = [
+  { 'user': 'fred',   'age': 48 },
+  { 'user': 'barney', 'age': 34 },
+  { 'user': 'fred',   'age': 40 },
+  { 'user': 'barney', 'age': 36 }
+];
+ 
+// Sort by `user` in ascending order and by `age` in descending order.
+_.orderBy(users, ['user', 'age'], ['asc', 'desc']);
+// => objects for [['barney', 36], ['barney', 34], ['fred', 48], ['fred', 40]]
+```
+
+```js
+import { orderBy } from 'lodash'
+private async getList() {
+  const { data } = await getListData()
+  this.list = orderBy(data, ['sort'], ['asc'])
+}
+```
