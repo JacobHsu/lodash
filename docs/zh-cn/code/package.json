@@ -1,15 +1,15 @@
 {
-  "name": "lang",
+  "name": "code",
   "version": "1.0.0",
   "description": "",
-  "main": "cloneDeep.js",
-  "dependencies": {
-    "lodash": "^4.17.10"
-  },
-  "devDependencies": {},
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
 }

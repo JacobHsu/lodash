@@ -1,5 +1,7 @@
 # 对象 Object
 
+pick <-> omit
+
 findKey
 ---
 
@@ -33,4 +35,32 @@ _.get(object, ['a', '0', 'b', 'c']);
  
 _.get(object, 'a.b.c', 'default');
 // => 'default'
+```
+
+omit
+---
+
+_.omit(object, [props])
+
+> 反向版 _.pick; 这个方法一个对象，这个对象由忽略属性之外的object自身和继承的可枚举属性组成。（可以理解为删除object对象的属性）。
+
+```js
+var object = { 'a': 1, 'b': '2', 'c': 3 };
+ 
+_.omit(object, ['a', 'c']);
+// => { 'b': '2' }
+```
+
+pick
+---
+
+_.pick(object, [props])
+
+> 创建一个从 object 中选中的属性的对象。
+
+```js
+var object = { 'a': 1, 'b': '2', 'c': 3 };
+ 
+_.pick(object, ['a', 'c']);
+// => { 'a': 1, 'c': 3 }
 ```

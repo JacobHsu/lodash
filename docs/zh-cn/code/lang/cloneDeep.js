@@ -1,4 +1,4 @@
-var _ = require("lodash@4.17.10")
+var _ = require("lodash")
 /// [demo]
 
 var objects = [{ 'a': 1 }, { 'b': 2 }];
